@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+	<title>APDC-2022-Avaliacao-Individual</title>
+	<link href="style.css" rel="stylesheet">
+</head>
+	
+<body>
+	<div>
+		<label class="label">List</label>
+	</div>
+	<form action="list" method="get">
+    	<div><input type="text" name="username" class="input" placeholder="List Users..."/></div>
+    	<div><input type="submit" class="submit-btn"/></div>
+    </form>
+    <div>
+		<a href='/delete.html'>Delete Account</a>
+	</div>
+	<div>
+		<label class="label">Logout</label>
+	</div>
+	<form action="logout" method="get">
+		<div><input type="text" name="username" class="input" placeholder="Logout username..."/></div>
+    	<div><input type="submit" class="submit-btn"/></div>
+    </form>
+    <div>
+		<label class="label">Update User</label>
+	</div>
+    <form action="update" method="post">
+    	<div>
+			<input type="text" name="username" placeholder="Username..." class="input-none"/>
+		</div>
+		<div>
+			<input type="text" name="userupdate" placeholder="User to Change..." class="input"/>
+		</div>
+		<div>
+			<input type="email" name="email" placeholder="Email..." class="input"/>
+		</div>
+		<div>
+			<input type="text" name="name" placeholder="Name..." class="input"/>
+		</div>
+		<div>
+			<input type="radio" name="profile" value="PUBLIC">
+			<label for="PUBLIC">Public</label><br>
+			<input type="radio" name="profile" value="PRIVATE">
+			<label for="PUBLIC">Private</label><br>
+		</div>
+		<div>
+			<input type="text" name="landline" placeholder="Landline..." class="input-none"/>
+		</div>
+		<div>
+			<input type="text" name="phone" placeholder="Phone..." class="input-none"/>
+		</div>
+		<div>
+			<input type="text" name="address" placeholder="Address..." class="input-none"/>
+		</div>
+		<div>
+			<input type="text" name="postc" placeholder="Postal Code..." class="input-none"/>
+		</div>
+		<div>
+			<input type="submit" class="submit-btn"></input>
+		</div>
+    </form>
+    <div>
+		<label class="label">Update Password</label>
+	</div>
+    <form action="updatepassword" method="post">
+    	<div>
+			<input type="text" name="username" placeholder="Username..." class="input-none"/>
+		</div>
+		<div>
+			<input type="password" name="pwd" placeholder="Old Password..." class="input-none"/>
+		</div>
+		<div>
+			<input type="password" name="newpwd" placeholder="New Password..." class="input-none"/>
+		</div>
+		<div>
+			<input type="password" name="confirmation" placeholder="Confirm Password..." class="input-none"/>
+		</div>
+		<div>
+			<input type="submit" class="submit-btn"></input>
+		</div>
+    </form>
+    <div>
+		<label class="label">Change User State</label>
+	</div>
+    <form action="stateuser" method="post">
+    	<div>
+			<input type="text" name="username" placeholder="Username..." class="input-none"/>
+		</div>
+		<div>
+			<input type="text" name="userState" placeholder="Username to Change..." class="input-none"/>
+		</div>
+		<label for="state"><b>STATE</b></label> 
+            <select name="state">
+                <option value="ACTIVE">ACTIVE</option>
+                <option value="INACTIVE" selected>INACTIVE</option>
+            </select>
+		<div>
+			<input type="submit" class="submit-btn"></input>
+		</div>
+    </form>
+    <div>
+		<label class="label">Change User Role</label>
+	</div>
+    <form action="roleuser" method="post">
+    	<div>
+			<input type="text" name="username" placeholder="Username..." class="input-none"/>
+		</div>
+		<div>
+			<input type="text" name="userrole" placeholder="Username to Change..." class="input-none"/>
+		</div>
+		<label for="role"><b>ROLE</b></label> 
+            <select name="role">
+                <option value="GS">GS</option>
+                <option value="GBO">GBO</option>
+                <option value="USER" selected>USER</option>
+            </select>
+		<div>
+			<input type="submit" class="submit-btn"></input>
+		</div>
+    </form>
+</body>
+</html>

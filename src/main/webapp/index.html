@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8" />
+    <title>APDC-2022-Avaliacao-Individual</title>
+    <link href="style.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <h1>APDC Avaliação Individual</h1>
+
+    <table>
+      <tr>
+        <td colspan="2" style="font-weight:bold;">SuperUser Registration: </td>        
+      </tr>
+    </table>
+     <form action="registerSU" method="post">
+		<div>
+			<input type="text" name="username" placeholder="Username..." class="input"/>
+		</div>
+		<div>
+			<input type="password" name="pwd" placeholder="Password..." class="input"/>
+		</div>
+		<div>
+			<input type="password" name="cpwd" placeholder="Confirmation Password..." class="input"/>
+
+		</div>
+		<div>
+			<!--<input type="email" name="email" placeholder="Email..." class="input"/>-->
+			<input type="email" name="email" placeholder="Email..." class="input"/>
+
+		</div>
+		<div>
+			<input type="text" name="name" placeholder="Name..." class="input"/>
+		</div>
+		<div>
+			<input type="radio" name="profile" value="PUBLIC">
+			<label for="PUBLIC">Public</label><br>
+			<input type="radio" name="profile" value="PRIVATE">
+			<label for="PRIVATE">Private</label><br>
+		</div>
+		<div>
+			<input type="text" name="landline" placeholder="Landline..." class="input-none"/>
+		</div>
+		<div>
+			<input type="text" name="phone" placeholder="Phone..." class="input-none"/>
+		</div>
+		<div>
+			<input type="text" name="address" placeholder="Address..." class="input-none"/>
+		</div>
+		<div>
+			<input type="text" name="postc" placeholder="Postal Code..." class="input-none"/>
+		</div>
+		<div>
+			<input type="submit" class="submit-btn"></input>
+		</div>
+	</form>
+	<table>
+	  <tr>
+        <td><a href='/menu.html'>Menu</a></td>
+      </tr>
+    </table>
+  </body>
+</html>
